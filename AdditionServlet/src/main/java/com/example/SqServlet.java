@@ -10,7 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 public class SqServlet extends HttpServlet{
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		PrintWriter out = res.getWriter();
-		out.println("Hello to Square Servlet!");
+		int k = (int) req.getAttribute("k");
+		out.println("Sum is:" + k);
+		
+		k = k * k;
+		out.println("Square of Sum is:" + k);
 		
 	}
 }
