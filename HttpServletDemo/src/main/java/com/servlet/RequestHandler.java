@@ -33,7 +33,7 @@ public class RequestHandler extends HttpServlet {
         
         // Generate an HTML response dynamically using the data from the form.
         out.println("<html><body>");
-        out.println("<h2>HTTP Request Handled Successfully!</h2>");
+        out.println("<h2 style='color:Green'>HTTP Request Handled Successfully!</h2>");
         out.println("<p><b>Name:</b> " + name + "</p>");
         out.println("<p><b>Email:</b> " + email + "</p>");
         out.println("</body></html>");
