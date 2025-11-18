@@ -5,10 +5,15 @@
     <title>Form Output</title>
 </head>
 <body>
-    <h2>Form Data Received</h2>
+    <h2>Form Data Received Successfully!!</h2>
 
     <%
         // Retrieve form data from request
         String name = request.getParameter("name");
         String email = request.getParameter("email");
     %>
+    
+    <p>Name: <%= name %></p>
+    <p>Email: <%= email %></p>
+</body>
+</html>
